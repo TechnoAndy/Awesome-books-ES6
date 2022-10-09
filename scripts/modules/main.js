@@ -156,3 +156,7 @@ setInterval(() => {
   time.textContent = formatTime(today);
   date.textContent = formatDate(today);
 }, 1000);
+
+export default {
+
+};
