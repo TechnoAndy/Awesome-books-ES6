@@ -1,8 +1,8 @@
 const totalBooks = JSON.parse(localStorage.getItem('books')) || [];
 class Book {
-    constructor(title, author) {
-      this.title = title;
-      this.author = author;
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
     }
 
     addBook = () => {
