@@ -16,7 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
     />
 
-    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -71,8 +71,7 @@
       </nav>
 
       <div class="date-time container d-flex justify-content-end gap-1 p-0">
-        <span class="date"></span>
-        <span class="time"></span>
+        <span class="time" id="time"></span>
       </div>
     </header>
 
@@ -91,7 +90,6 @@
             </thead>
             <tbody id="book-list"></tbody>
           </table>
-          <!-- <hr class="line" / -->
           <br />
         </div>
       </section>
@@ -100,7 +98,7 @@
       <section class="addNew page" id="addNew">
         <div class="container">
           <h2>Add a new book</h2>
-          <form class="form mx-auto">
+          <form class="form mx-auto" id="form">
             <ul role="list" class="book-input">
               <li>
                 <input
@@ -163,7 +161,7 @@
         </span>
       </div>
     </footer>
-    <script src="./scripts/index.js" type="module" defer></script>
+    <script src="index.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

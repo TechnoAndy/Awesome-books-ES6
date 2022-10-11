@@ -1,11 +1,24 @@
-// Book Class: Represents a book
-export default class Book {
+const totalBooks = JSON.parse(localStorage.getItem('books')) || [];
+
+class Book {
     constructor(title, author) {
       this.title = title;
       this.author = author;
     }
 
-    getBookInfo () {
-        return {title: this.title, author: this.author};
+    addBook = () => {
+        const book = new Book(this.title, this.author);
+        totalBooks.push(book);
+        localStorage.setItem('books', JSON.stringify(totalBooks));
+
     }
+
+    static deleteBook = (el) => {
+        if (el.classList.contains('btn')) {
+          el.parentElement.parentElement.remove();
+        }
+      }
   }
+
+
+  export default Book;
