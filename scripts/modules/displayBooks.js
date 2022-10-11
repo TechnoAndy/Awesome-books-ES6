@@ -1,7 +1,6 @@
 const totalBooks = JSON.parse(localStorage.getItem('books'))|| [];
 const list = document.querySelector('#book-list');
 
-
 const displayBooks = () => {
     totalBooks.forEach((book) => {
         const row = document.createElement('tr');
