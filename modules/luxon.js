@@ -1,3 +1,4 @@
+/* eslint-disable brace-style */
 /* eslint-disable linebreak-style */
 /* eslint-disable prefer-rest-params */
 /* eslint-disable no-underscore-dangle */
