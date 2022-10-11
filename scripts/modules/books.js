@@ -1,5 +1,4 @@
 const totalBooks = JSON.parse(localStorage.getItem('books')) || [];
-
 class Book {
     constructor(title, author) {
       this.title = title;
@@ -10,7 +9,6 @@ class Book {
         const book = new Book(this.title, this.author);
         totalBooks.push(book);
         localStorage.setItem('books', JSON.stringify(totalBooks));
-
     }
 
     static deleteBook = (el) => {
@@ -19,6 +17,5 @@ class Book {
         }
       }
   }
-
 
   export default Book;
