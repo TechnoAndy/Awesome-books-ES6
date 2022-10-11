@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const totalBooks = JSON.parse(localStorage.getItem('books')) || [];
 class Book {
   constructor(title, author) {

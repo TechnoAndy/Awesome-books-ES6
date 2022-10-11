@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { DateTime } from './luxon.js';
 
 const displayDateTime = () => {

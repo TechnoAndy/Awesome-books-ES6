@@ -1,9 +1,10 @@
+/* eslint-disable linebreak-style */
 const singlePageNav = () => {
   const navLinks = document.querySelectorAll('.nav-link');
   navLinks.forEach((link) => {
     link.addEventListener('click', () => {
       const page = document.querySelector(
-        `#${link.getAttribute('data-trigger')}`
+        `#${link.getAttribute('data-trigger')}`,
       );
 
       // remove current class from the one who have it.

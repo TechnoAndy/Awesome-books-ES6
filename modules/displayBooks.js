@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const totalBooks = JSON.parse(localStorage.getItem('books')) || [];
 const list = document.querySelector('#book-list');
 

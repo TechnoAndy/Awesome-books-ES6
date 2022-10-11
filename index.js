@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import Book from './modules/books.js';
 import displayBooks from './modules/displayBooks.js';
 import displayDateTime from './modules/displayTime.js';
