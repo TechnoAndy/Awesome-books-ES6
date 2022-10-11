@@ -41,9 +41,7 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // Remove book from AppBook
   Book.deleteBook(e.target);
 
-  const titleDel =
-    e.target.parentElement.previousElementSibling.previousElementSibling
-      .textContent;
+  const titleDel = e.target.parentElement.previousElementSibling.previousElementSibling.textContent;
   // Remove book from store
   const totalBooks = JSON.parse(localStorage.getItem('books')) || [];
   totalBooks.forEach((book, index) => {
