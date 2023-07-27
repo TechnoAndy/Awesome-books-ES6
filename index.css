@@ -13,7 +13,6 @@ body {
   background-image: url('library-1.avif');
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 html {
@@ -54,9 +53,6 @@ h2 {
 .nav-link:hover {
   text-decoration: underline;
 }
-
-
-
 
 .line {
   margin-top: 50px;
