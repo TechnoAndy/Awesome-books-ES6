@@ -47,8 +47,16 @@ h2 {
 
 .nav-link {
   color: black;
+  font-weight: 500;
   font-size: 18px;
 }
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+
 
 .line {
   margin-top: 50px;
@@ -119,6 +127,10 @@ button {
   border: 2px solid black;
   box-shadow: 2px 2px 1px black;
   padding: 0.25rem;
+}
+
+.btn {
+  background-color: white;
 }
 
 input {
