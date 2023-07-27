@@ -10,8 +10,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%23ea2020' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-image: url('library-1.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 html {
@@ -25,6 +27,27 @@ table {
 h1,
 h2 {
   text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  width: 30%;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container h2 {
+  padding-bottom: 0px;
+}
+
+.nav-link {
+  color: black;
+  font-size: 18px;
 }
 
 .line {
@@ -61,8 +84,6 @@ h2 {
   font-size: 1rem;
   display: flex;
   padding-top: 10px;
-
-  /* text-align: right; */
   margin-right: 10px;
   width: 150%;
   height: 5vh;
@@ -113,22 +134,27 @@ input {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 2rem;
+  font-weight: bold;
 }
 
 .contact p,
 .contact ul {
-  text-align: left;
+  text-align: center;
   line-height: 1.5rem;
   margin-bottom: 2rem;
+  text-decoration: none;
+  list-style: none;
 }
 
 .contact ul {
-  margin-left: 3rem;
+  margin-right: 2.5rem;
 }
 
 /* Footer Section */
 footer {
   width: 100%;
+  text-align: center;
+  font-size: 18px;
 }
 
 footer a {
@@ -149,4 +175,25 @@ footer a {
 .current {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+
+  h2 {
+    width: 50%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    margin-bottom: 2px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h2 {
+    width: 50%;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
 }
